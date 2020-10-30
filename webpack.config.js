@@ -124,15 +124,16 @@ const config = {
           }
         ]
       },
-      {
-        test: /\.(woff|woff2|ttf|otf|eot)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            outputPath: 'fonts'
-          }
-        }]
-      }
+      // {
+      //   test: /\.(woff|woff2|ttf|otf|eot)$/,
+      //   use: [{
+      //     loader: 'file-loader',
+      //     options: {
+      //       name: '[name].[ext]',
+      //       outputPath: 'fonts/'
+      //     }
+      //   }]
+      // }
     ]
   },
 
@@ -146,7 +147,7 @@ const config = {
     }),
     new CopyWebpackPlugin([
       // {from: './src/static', to: './'},
-      // {from: './src/img', to: './img/'},
+      {from: './src/fonts', to: './fonts'},
     ]),
   ],
 
