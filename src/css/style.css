@@ -138,13 +138,9 @@ header nav :not(:first-child) {
  margin-left: 27px;
 }
 
-.getStartedPage{
-  height: 637px;
-}
-
 button{
-  width: 100px;
-  height: 46px;
+  min-width: 100px;
+  min-height: 46px;
   border: 1px solid #BCD0E5;
   box-sizing: border-box;
   border-radius: 4px;
@@ -159,9 +155,89 @@ button{
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25) inset; 
 }
 
-.signUpButton{
+.signInButton:hover{
+  background-color: #BCD0E5;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.yellowButton{
   background-color: #FF9900;
   color: #fff;
   border: none;
+
+}
+
+.signUpButton{
   margin-left: 8px;
 }
+
+.yellowButton:hover{
+  background-color: #FF7549;
+}
+
+.getStarted{
+  height: 637px;
+  display: flex;
+  align-items: center;
+}
+
+.getStarted img{
+  width: 640px;
+  height: 500px;
+}
+
+.getStartedButton{
+  padding: 0 40px;
+}
+
+.getStartedInfoBlock{
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.getStartedInfoBlock h2{
+  font-weight: 700;
+  font-size: 44px;
+  color: #2F281E;
+}
+
+.getStartedInfoBlock p{
+  color: #544837;
+  max-width: 489px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.getStartedControl{
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.getStartedLink{
+  margin-left: 40px;
+  display: flex;
+}
+
+.getStartedLink a{
+  color: #FF9900;
+}
+
+.getStartedLink:hover{
+  filter: invert(57%) sepia(89%) saturate(1800%) hue-rotate(329deg) brightness(101%) contrast(102%);
+}
+
+.getStartedLink img{
+  height: 20px;
+  width: 18px;
+  margin-right: 8px;
+}
+
+.signUp{
+  height: 543px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
